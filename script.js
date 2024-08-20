@@ -62,15 +62,15 @@ function playGame(){
 
     for (let i=0; i<5; i++){
         compChoice = getComputerChoice();
-        console.log(compChoice);
+        console.log("Computer's choice: ",compChoice);
         humanChoice = getHumanChoice();
-        console.log(humanChoice);
+        console.log("Your choice: ",humanChoice);
 
         playRound(humanChoice,compChoice);
     }
 
-    console.log(humanScore);
-    console.log(compScore);
+    console.log("Your score: ",humanScore);
+    console.log("Computer's score: ",compScore);
     checkWinner(humanScore,compScore);
 }
 
